@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Pour inclure les paddings et bordures dans la taille des éléments */
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgb(37,6,83);
+    background: linear-gradient(0deg, rgba(37,6,83,1) 0%, rgba(66,3,161,1) 46%, rgba(102,0,255,1) 100%);
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
+#pageLogo{
+    position: relative;
+    z-index: 1;
+    top: 70px;  
+    left: 90px; 
+}
+
+#couleur1{
+    color: white;
+}
+
+#couleur2{
+    color: #6600FF ;
+}
+
+#backgroundBlock{
+    width: 1350px; /* largeur */
+    height: 800px; /* hauteur */
+    background-color: #000000; /* couleur de fond */
+    border-radius: 20px; /* angles arrondis */
+    margin: 40px 45px; /* espace externe (centré) */
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6); /* ombre */
+    z-index: -1;
+    overflow: hidden;
+}
+
+.dotElement{
+    position: relative;
+    left: 750px;
+    top: 200px;
+}
