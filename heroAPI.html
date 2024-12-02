@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>heroAPI</title>
     <link rel="stylesheet" href ="heroAPI.css">
-    <script defer scr="heroAPI"></script>
+	<link rel="stylesheet" href="textbox.css">
+    <script defer scr="heroAPI.js"></script>
 </head>
-<header>
-    <h1><span id="couleur1">Heroes</span><span id="couleur2">Hub</span></h1>
-    <div id="logo"></div>
-</header>
+
+
 
 <body>
-
+ <div id="backgroundBlock">
+   <div id="pageLogo">
+    <h1><span id="couleur1">Heroes</span><span id="couleur2">Hub</span></h1>
+    <div class="dotElement">
+        <img src="img/circle-dotted-background-pop-art-comic-style-illustration-png.png" alt="White dot" width="800" height="800" >
+    </div>
+    </div>  
     <div class="search-container" >
         <input type="text" placeholder="Search..." class="search-input">
         <button class="search-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
@@ -25,9 +30,13 @@
         <div class="image"> 
             <img src="https://upload.wikimedia.org/wikipedia/en/b/b2/Harley_Quinn_comic_book.jpg" alt="imagepersonnage" width="650px" height="850px">
         </div>
-        <div id="description"></div>
-        <div id="statistiques"></div>
-    </div>
+      <div id="description" class="textbox">Category : <span class="bold">Value</span></div>
+        <div id="statistics" class="textbox">Category : <span class="bold">Value</span></div>
+      </div>
+
+    
+    
+
 </body>
 
 </html>
