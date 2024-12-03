@@ -86,8 +86,23 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-size: xx-large;
-    top: 320px;
+    top: 330px;
     left: 1100px;
+}
+
+#stats {
+    position:absolute;
+    left:40%;
+    justify-self:center ;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    top: 565px;
+    left: 1110px;
+    font-weight: 400;
+    z-index: 2;
+    
 }
 
 * {
@@ -151,13 +166,13 @@ h1 {
 @import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
 
 .textbox {
-	background-color:#6600FF;
-	opacity: 0.8;
+	background-color:rgba(102, 0, 255, 0.8);
+	/* opacity: 0.8; */
 	font-family: 'Istok Web', sans-serif;
 	color:#FFFFFF;
 	padding: 20px;
     padding-right: 100px;
-	margin: 10px;
+	margin: 15px;
 	border-radius: 10px;
 	letter-spacing: 1px;
 	text-align: left;
@@ -166,6 +181,8 @@ h1 {
 	position: absolute;
     width: 320px;
     line-height: 25px;
+    position:absolute;
+    z-index: 1;
 }
 
 #description {
@@ -176,6 +193,7 @@ h1 {
 #statistics {
     top: 530px;
     right: 470px;
+    margin-top: 50px;
 }
 
 .regular {
