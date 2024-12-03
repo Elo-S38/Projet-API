@@ -23,16 +23,18 @@ body {
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
-    border: 1px solid #ccc;
+    border: 3px solid transparent;
     border-radius: 25px;
     padding: 5px 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */
     top: 190px;
     left: 1300px;
+    
 }
 
 .search-container:hover {
     border: 3px solid #6600FF;    /* au survol de la souris */
+
     }
 
 
@@ -52,7 +54,7 @@ body {
 /* Bouton de recherche */
 .search-button {    
     color : white;
-    border: "none";
+    border: none;
     border-radius: 50%;
     padding: 10px;
     font-size: 18px;
@@ -62,7 +64,9 @@ body {
 }
 
 .search-button:hover {   
-    scale:1.3;  /* zoom loupe */
+    /* scale:1.3; */  /* zoom loupe */
+    transform: rotate(360deg); /* Tour complet */
+    transition: transform 0.5s ease-in-out; /* Transition fluide */
 }
 
 
@@ -195,4 +199,145 @@ h1{
 
 .bold {
 	font-weight: 700;
+}
+
+h3, h5{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#couleur3{
+    color: rgb(96, 96, 96);
+}
+
+.logoMenu{
+    position: absolute;
+    z-index: 1;
+    top: 390px;  
+    left: 830px; 
+
+}
+
+h3{
+    position: absolute;
+    z-index: 1;
+    top: 450px;  
+    left: 878px;  
+}
+
+h5{
+    position: absolute;
+    z-index: 1;
+    top: 600px;  
+    left: 750px;  
+}
+
+.dotElementmenu{
+    position: relative;
+    justify-self: center;
+    bottom: 340px;
+    right: 590px;
+}
+
+#icone{
+    position: absolute;
+    z-index: 1;
+    top: 588px;  
+    left: 700px; 
+}
+
+#playiconMenu{
+    position: absolute;
+    z-index: 1;
+    top: 403px;  
+    left: 1055px; 
+    opacity: 0.5; /* Complètement visible par défaut */
+    transition: opacity 0.3s ease; /* Transition fluide */
+}
+
+#playiconMenu:hover {
+    scale:1.07;
+    opacity: 1;
+}
+
+#playicon{
+    position: absolute;
+    z-index: 1;
+    top: 200px;  
+    left: 630px; 
+    opacity: 0.5; /* Complètement visible par défaut */
+    transition: opacity 0.3s ease;
+}
+
+#playicon:hover {
+    /* transform: scale(1.1); */ /* Léger agrandissement */
+   /*  animation: pulse 0.6s infinite; */ /* Animation continue */
+   scale:1.07;
+   opacity: 1;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1); /* État initial et final */
+    }
+    50% {
+        transform: scale(1.2); /* État intermédiaire */
+    }
+}
+
+
+.search-containerMenu {
+    background-color: #f0f0f0;
+    z-index:1;
+    display: flex;
+    position: absolute;
+    align-items:center;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    padding: 5px 10px;
+    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);  /* ombre de l'element */
+    
+}
+
+.search-containerMenu:hover {
+    border: 3px solid #6600FF;    /* au survol de la souris */
+
+    }
+
+
+
+/* Champ de recherche */
+.search-inputMenu {
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 16px;
+        flex-grow: 1;
+        border-radius: 25px;
+        position: relative;
+        padding-right: 150px;
+    }
+    
+
+/* Bouton de recherche */
+.search-buttonMenu {    
+    color : white;
+    border: "none";
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    cursor:pointer; /* Indique que c'est un bouton cliquable */
+    all: unset; /* Retire tous les styles de base */
+    justify-self: right; 
+}
+
+.search-buttonMenu:hover {   
+    /* scale:1.3; */  /* zoom loupe */
+    transform: rotate(360deg); /* Tour complet */
+    transition: transform 0.5s ease-in-out; /* Transition fluide */
+    /*  transform: scale(1.1); */ /* Léger agrandissement */
+    /* animation: pulse 0.6s infinite;  *//* Animation continue */
 }
