@@ -1,4 +1,4 @@
-async function logSuperHeroPage(name) {
+/* async function logSuperHeroPage(name) {
 	const res = await fetch(`https://superheroapi.com/api/c10afa1362f8634b2128f164904f9360/search/${name}`);
 	
 	// on récupère le html de la page en texte :
@@ -7,7 +7,7 @@ async function logSuperHeroPage(name) {
 	// puis on l'affiche
 	console.log(pageContent);
 }
-logSuperHeroPage('vegeta');
+logSuperHeroPage('vegeta'); */
  
 
 // const searchInput = document.getElementById('searchInput')
@@ -30,6 +30,81 @@ logSuperHeroPage('vegeta');
 //         <p class="description">Description : ${name.alignment}</p>`; */ //On injecte les contenus dans l'élément HTML, dans des balises différentes
 //     nameContainer.appendChild(nameElement); 
 // });
+
+
+
+const API_BASE_URL = 'https://superheroapi.com/api.php';
+const ACCESS_TOKEN = "c10afa1362f8634b2128f164904f9360";
+const searchButton = document.getElementById("search-Button");
+const heroNameInput = document.getElementById("heroNameInput");
+/* const heroInfoDiv = document.getElementById("heroInfo"); */
+
+function fetchSuperHero(name) {
+    const url = `${API_BASE_URL}/${ACCESS_TOKEN}/search/${name}`;
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        if (data.response === "success") {
+          displayHeroInfo(data.results[0]);
+        } else {
+          heroInfoDiv.innerHTML = `<p>"${name}" is unknown</p>`;
+        }
+      })
+      .catch(error => {
+        console.error("Error fetching superhero data:", error);
+        heroInfoDiv.innerHTML = `<p>There was an error fetching the superhero data.</p>`;
+      });
+  }
+
+  function displayHeroInfo(hero) {
+    // Mettre à jour le nom du héros
+    const heroNameDiv = document.getElementById("heroName");
+    if (heroNameDiv) {
+      heroNameDiv.innerHTML = `<h2>${hero.name}</h2>`;
+    }
+  
+    // Mettre à jour l'image du héros
+    const heroImageDiv = document.querySelector(".image img");
+    if (heroImageDiv) {
+      heroImageDiv.src = hero.image.url;
+      heroImageDiv.alt = hero.name;
+    }
+  
+    // Mettre à jour la description
+    const descriptionDiv = document.getElementById("description");
+    if (descriptionDiv) {
+      descriptionDiv.innerHTML = `
+        Publisher : <span class="bold">${hero.biography.publisher || "Unknown"}</span><br>
+        Full-name : <span class="bold">${hero.biography["full-name"] || "Unknown"}</span><br>
+        Alignement : <span class="bold">${hero.biography.alignment || "Unknown"}</span>
+      `;
+    }
+  
+    // Mettre à jour les statistiques
+    const statisticsDiv = document.getElementById("statistics");
+    if (statisticsDiv) {
+      statisticsDiv.innerHTML = `
+        Intelligence : <span class="bold">${hero.powerstats.intelligence || "Unknown"}</span><br>
+        Strength : <span class="bold">${hero.powerstats.strength || "Unknown"}</span><br>
+        Speed : <span class="bold">${hero.powerstats.speed || "Unknown"}</span><br>
+        Durability : <span class="bold">${hero.powerstats.durability || "Unknown"}</span><br>
+        Power : <span class="bold">${hero.powerstats.power || "Unknown"}</span><br>
+        Combat : <span class="bold">${hero.powerstats.combat || "Unknown"}</span>
+      `;
+    }
+  }
+
+  searchButton.addEventListener("click", () => {
+    const heroName = heroNameInput.value.trim();
+    if (heroName) {
+      fetchSuperHero(heroName);
+    } else {
+      heroInfoDiv.innerHTML = "<p>Please enter a superhero name.</p>";
+    }
+  });
+
+
+
 
 
 
