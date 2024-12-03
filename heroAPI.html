@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>heroAPI</title>
     <link rel="stylesheet" href ="heroAPI.css">
-	<link rel="stylesheet" href="textbox.css">  <!-- /Ranger le css de maya  -->
-    <script defer src="heroAPI.js"></script>
+    <script defer src="heroApi.js"></script>
 </head>
 
 
@@ -35,6 +34,41 @@
   <img src="img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
 </div>
 
+
+<div id="boombox">
+  <div class="boombox-handle"></div>
+  <div class="boombox-body">
+      <section class="master-controls">
+          <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
+          <datalist id="gain-vals">
+              <option value="0" label="min">
+              <option value="2" label="max">
+          </datalist>
+          <label for="volume"></label>
+          <input type="range" id="panner" class="control-panner" list="pan-vals" min="-1" max="1" value="0" step="0.01" data-action="panner" />
+          <datalist id="pan-vals">
+              <option value="-1" label="left">
+              <option value="1" label="right">
+          </datalist>
+          <!-- <label for="panner">PAN</label> -->
+          <!-- <button class="control-power" role="switch" aria-checked="false" data-power="on"> -->
+              <!-- <span>On/Off</span> -->
+          </button>
+      </section>
+      <section class="tape">
+      <audio src="Kevin MacLeod [Official] - Final Battle of the Dark Wizards - incompetech.com.m4a" crossorigin="anonymous" ></audio>
+<!--            type="audio/mpeg" -->
+              <div id="playicon">
+                  <button data-playing="false" class="tape-controls-play" role="switch" aria-checked="false">
+                  <img src="img/118621_play_icon.png" alt="Icon Play" width="27" height="24">
+              </div>
+          </button>
+      </section>
+  </div><!-- boombox-body -->
+</div>
+
+
 </body>
 
 </html>
+
