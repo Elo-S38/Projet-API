@@ -240,7 +240,7 @@ h5 {
     right: 590px;
 }
 
-#icone {
+#icon {
     position: absolute;
     z-index: 1;
     top: 588px;  
@@ -248,7 +248,7 @@ h5 {
     transition: transform 1.4s ease; /* Transition fluide */
 }
 
-#icone:hover {
+#icon:hover {
     transform: rotate(360deg); /* Rotation à 360° */
 }
 
