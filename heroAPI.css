@@ -357,3 +357,13 @@ h5 {
     height: 36px;
     width: 36px;
 }
+
+a{
+    text-decoration: none; /* Supprime le soulignement */ 
+}
+
+#LINKtoMENU{
+    position: absolute;
+    top: 188px;
+    left: 400px;
+}
