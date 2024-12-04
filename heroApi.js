@@ -103,6 +103,17 @@ function fetchSuperHero(name) {
     }
   });
 
+  // Ajout d'un listener pour l'appui sur la touche "Entrée" dans l'input
+heroNameInput.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") { // Vérifie si la touche est "Entrée"
+        const heroName = heroNameInput.value.trim();
+        if (heroName) {
+            fetchSuperHero(heroName);
+        } else {
+            heroInfoDiv.innerHTML = "<p>Please enter a superhero name.</p>";
+        }
+    }
+});
 
 
 
