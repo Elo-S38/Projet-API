@@ -14,12 +14,12 @@ function fetchSuperHero(name) {
         if (data.response === "success") {
           displayHeroInfo(data.results[0]);
         } else {
-          heroInfoDiv.innerHTML = `<p>"${name}" is unknown</p>`;
+			alert("Couldn't find this hero, sorry bro.");
         }
       })
       .catch(error => {
         console.error("Error fetching superhero data:", error);
-        heroInfoDiv.innerHTML = `<p>There was an error fetching the superhero data.</p>`;
+        alert("There was an error fetching the superhero data.");
       });
   }
 
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (heroName) {
         fetchSuperHero(heroName);
     } else {
-        console.log("No hero name provided in the URL.");
+        alert("Please enter a superhero name.");
     }
 });
 
@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (heroName) {
       fetchSuperHero(heroName);
     } else {
-      heroInfoDiv.innerHTML = "<p>Please enter a superhero name.</p>";
+		alert("Please enter a superhero name.");
     }
   });
 
@@ -91,7 +91,7 @@ heroNameInput.addEventListener("keypress", (event) => {
         if (heroName) {
             fetchSuperHero(heroName);
         } else {
-            heroInfoDiv.innerHTML = "<p>Please enter a superhero name.</p>";
+			alert("Please enter a superhero name.");
         }
     }
 });

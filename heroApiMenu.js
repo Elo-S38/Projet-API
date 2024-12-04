@@ -1,5 +1,3 @@
-// const API_BASE_URL = 'https://superheroapi.com/api.php';
-// const ACCESS_TOKEN = "c10afa1362f8634b2128f164904f9360";
 const searchButtonMenu = document.getElementById("search-buttonMenu");
 const heroNameInputMenu = document.getElementById("heroNameInputMenu");
 
