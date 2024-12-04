@@ -343,14 +343,14 @@ h5 {
     visibility: hidden;
 }
 
-.tape-controls-play{
+.tape-controls-play {
     mask-image: url(ressources/img/118621_play_icon.png);
     mask-size: contain;
     height: 27px;
     width: 26px;
 }
 
-.tape-controls-playMENU{
+.tape-controls-playMENU {
     mask-image: url(ressources/img/flashICONMENU.png);
     mask-size: contain;
     height: 36px;
