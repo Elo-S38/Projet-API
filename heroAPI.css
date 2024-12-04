@@ -245,6 +245,11 @@ h5 {
     z-index: 1;
     top: 588px;  
     left: 700px; 
+    transition: transform 1.4s ease; /* Transition fluide */
+}
+
+#icone:hover {
+    transform: rotate(360deg); /* Rotation à 360° */
 }
 
 #playiconMenu {
@@ -257,7 +262,7 @@ h5 {
 }
 
 #playiconMenu:hover {
-    scale:1.07;
+    scale:1.09;
     opacity: 1;
 }
 
