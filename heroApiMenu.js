@@ -22,7 +22,7 @@ searchButtonMenu.addEventListener("click", () => {
 			if (result == true) {
 				window.location.href = `heroAPI.html?heroName=${encodeURIComponent(heroName)}`;
 		} else {
-			alert("Couldn't find this hero, sorry bro.");
+			alert("Couldn't find this hero, sorry.");
 		}
 		});
 	} else {
@@ -39,7 +39,7 @@ heroNameInputMenu.addEventListener("keypress", (event) => {
 				if (result == true) {
 					window.location.href = `heroAPI.html?heroName=${encodeURIComponent(heroName)}`;
 			} else {
-				alert("Couldn't find this hero, sorry bro.");
+				alert("Couldn't find this hero, sorry.");
 			}
 			});
         } else {

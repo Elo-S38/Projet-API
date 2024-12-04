@@ -14,7 +14,7 @@ function fetchSuperHero(name) {
         if (data.response === "success") {
           displayHeroInfo(data.results[0]);
         } else {
-			alert("Couldn't find this hero, sorry bro.");
+			alert("Couldn't find this hero, sorry.");
         }
       })
       .catch(error => {
