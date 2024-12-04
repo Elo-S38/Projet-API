@@ -32,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const heroName = getHeroNameFromURL();
     if (heroName) {
         fetchSuperHero(heroName);
-    } else {
-        alert("Please enter a superhero name.");
     }
 });
 
