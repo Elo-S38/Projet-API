@@ -250,8 +250,8 @@ h5 {
 #playiconMenu {
     position: absolute;
     z-index: 1;
-    top: 403px;  
-    left: 1055px; 
+    top: 398px;  
+    left: 1049px; 
     opacity: 0.5; /* Complètement visible par défaut */
     transition: opacity 0.3s ease; /* Transition fluide */
 }
@@ -344,4 +344,11 @@ h5 {
     mask-size: contain;
     height: 27px;
     width: 26px;
+}
+
+.tape-controls-playMENU{
+    mask-image: url(img/flashICONMENU.png);
+    mask-size: contain;
+    height: 36px;
+    width: 36px;
 }
