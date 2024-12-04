@@ -1,24 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
+
 /* Style global */
 body {
     display: flex;
     justify-content: center;
     align-items: center; 
     margin: 0;
-    padding:0;
+    padding: 0;
     height: 20vh;
     background-color: #f0f0f0;
-    display:grid;
+    display: grid;
 }
 
 /* Conteneur de recherche */
 .search-container {
     background-color: #f0f0f0;
-    z-index:1;
+    z-index: 1;
     display: flex;
     position: absolute;
-    top:0%;
-    left:80%;
-    align-items:center;
+    top: 0%;
+    left: 80%;
+    align-items: center;
     background-color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-align: left;
@@ -53,7 +55,7 @@ body {
     border-radius: 50%;
     padding: 10px;
     font-size: 18px;
-    cursor:pointer; /* Indique que c'est un bouton cliquable */
+    cursor: pointer; /* Indique que c'est un bouton cliquable */
     all: unset; /* Retire tous les styles de base */
 }
 
@@ -69,19 +71,19 @@ body {
     display: flex;
     position: absolute;
     right: 80%;
-    top:0;
-    bottom:10%;
+    top: 0;
+    bottom: 10%;
     box-shadow: 10px 10px 0px rgba(96, 96, 96, 1); 
     border-radius: 5%;
-    left: 400px ;
+    left: 400px;
     top: 300px;
 }
 
 #heroName {
     z-index: 1;           
-    position:absolute;
-    left:40%;
-    justify-self:center ;
+    position: absolute;
+    left: 40%;
+    justify-self: center;
     color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
@@ -91,9 +93,9 @@ body {
 }
 
 #stats {
-    position:absolute;
-    left:40%;
-    justify-self:center ;
+    position: absolute;
+    left: 40%;
+    justify-self: center;
     color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
@@ -101,8 +103,7 @@ body {
     top: 565px;
     left: 1110px;
     font-weight: 400;
-    z-index: 2;
-    
+    z-index: 2; 
 }
 
 * {
@@ -143,7 +144,7 @@ h1 {
 }
 
 #couleur2 {
-    color: #6600FF ;
+    color: #6600FF;
 }
 
 #backgroundBlock {
@@ -163,13 +164,11 @@ h1 {
     top: 200px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap');
-
 .textbox {
-	background-color:rgba(102, 0, 255, 0.8);
+	background-color: rgba(102, 0, 255, 0.8);
 	/* opacity: 0.8; */
 	font-family: 'Istok Web', sans-serif;
-	color:#FFFFFF;
+	color: #FFFFFF;
 	padding: 20px;
     padding-right: 50px;
 	margin: 15px;
@@ -181,7 +180,7 @@ h1 {
 	position: absolute;
     width: 320px;
     line-height: 25px;
-    position:absolute;
+    position: absolute;
     z-index: 1;
 }
 
@@ -312,14 +311,14 @@ h5 {
 
 /* Champ de recherche */
 .search-inputMenu {
-        border: none;
-        outline: none;
-        padding: 10px;
-        font-size: 16px;
-        flex-grow: 1;
-        border-radius: 25px;
-        position: relative;
-        padding-right: 150px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    flex-grow: 1;
+    border-radius: 25px;
+    position: relative;
+    padding-right: 150px;
 }
 
 /* Bouton de recherche */
@@ -329,7 +328,7 @@ h5 {
     border-radius: 50%;
     padding: 10px;
     font-size: 18px;
-    cursor:pointer; /* Indique que c'est un bouton cliquable */
+    cursor: pointer; /* Indique que c'est un bouton cliquable */
     all: unset; /* Retire tous les styles de base */
     justify-self: right; 
 }
@@ -345,24 +344,24 @@ h5 {
 }
 
 .tape-controls-play{
-    mask-image: url(img/118621_play_icon.png);
+    mask-image: url(ressources/img/118621_play_icon.png);
     mask-size: contain;
     height: 27px;
     width: 26px;
 }
 
 .tape-controls-playMENU{
-    mask-image: url(img/flashICONMENU.png);
+    mask-image: url(ressources/img/flashICONMENU.png);
     mask-size: contain;
     height: 36px;
     width: 36px;
 }
 
-a{
+a {
     text-decoration: none; /* Supprime le soulignement */ 
 }
 
-#LINKtoMENU{
+#LINKtoMENU {
     position: absolute;
     top: 188px;
     left: 400px;
