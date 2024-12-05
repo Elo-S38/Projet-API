@@ -6,20 +6,20 @@ const searchButton = document.getElementById("search-Button");
 const heroNameInput = document.getElementById("heroNameInput");
 /* const heroInfoDiv = document.getElementById("heroInfo"); */
 
-function fetchSuperHero(name) {
-    const url = `${API_BASE_URL}/${ACCESS_TOKEN}/search/${name}`;
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        if (data.response === "success") {
-          displayHeroInfo(data.results[0]);
+function fetchSuperHero(name) {                                          /*  Fonction qui recupere le personnage selon le nom rentré dans la barre de recherche et qui renvois la donnée    */ 
+    const url = `${API_BASE_URL}/${ACCESS_TOKEN}/search/${name}`;     /* construction de la requete */
+    fetch(url)                                                       /* on envoie la requete pour recuperer les donnees */
+      .then(response => response.json())                             /* recuperation du json  */
+      .then(data => {                                              /*  data du json */
+        if (data.response === "success") {                         /* si c'est true on affiche le personnage */
+          displayHeroInfo(data.results[0]);                       
         } else {
-			alert("Couldn't find this hero, sorry.");
+			alert("Couldn't find this hero, sorry.");                /*  Message d'erreur lie a l'utilisateur */
         }
       })
       .catch(error => {
-        console.error("Error fetching superhero data:", error);
-        alert("There was an error fetching the superhero data.");
+        console.error("Error fetching superhero data:", error);            
+        alert("There was an error fetching the superhero data.");      /* erreur liee a l api */
       });
   }
 
@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  searchButton.addEventListener("click", () => {
-    const heroName = heroNameInput.value.trim();
+  searchButton.addEventListener("click", () => {     /* fonction qui recupere le nom du personnage */
+    const heroName = heroNameInput.value.trim();     /* Recupere les characteres */
     if (heroName) {
       fetchSuperHero(heroName);
     } else {
