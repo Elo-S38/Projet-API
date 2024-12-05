@@ -9,24 +9,28 @@
 		<script defer src="heroApiMenu.js"></script>
 	</head>
 	<body>
-		<div id="backgroundBlock">
-			<div class="dotElementmenu">
-				<img src="ressources/img/circle-dotted-background-pop-art-comic-style-illustration-png.png" alt="White dot" width="800" height="800" >
+		<!-- structure de la page -->
+		<div id="backgroundBlock">     <!-- Fond noir  -->
+			<div class="dotElementmenu">   <!-- point blanc -->
+				<img src="ressources/img/circle-dotted-background-pop-art-comic-style-illustration-png.png" alt="White dot" width="800" height="800" > 
 			</div>
-			<div class="logoMenu">
+			<div class="logoMenu">   
 				<h1><span id="couleur1">Heroes</span><span id="couleur2">Hub</span></h1>
 			</div>
 			<h3><span id="couleur1">Find your</span><span id="couleur2"> Legend</span></h3>
 			<div id="nameContainer"></div>
 			<h5><span id="couleur1">You will not find characters from</span><span id="couleur3"> video games</span><span id="couleur1"> or the</span><span id="couleur3"> Disney universe</span></h5>  
 		</div>
-		<div id="icon">
+		<div id="icon"> <!--  croix -->
 			<img src="ressources/img/cross-mark-304374_960_720.png" alt="cross icon" width="40" height="40">
 		</div>
-		<div class="search-containerMenu" >
+		<div class="search-containerMenu" >    <!-- Barre de recherche -->
 			<input type="text" placeholder="Search..." class="search-inputMenu" id="heroNameInputMenu">
 			<button class="search-buttonMenu" id="search-buttonMenu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg></button>
 		</div>
+		<!-- structure de la page fin  -->
+
+		<!-- Gestion de la musique  -->
 		<div id="boombox">
 			<div class="boombox-handle"></div>
 			<div class="boombox-body">
@@ -47,11 +51,12 @@
 					<audio src="ressources/audio/Kevin MacLeod [Official] - Final Battle of the Dark Wizards - incompetech.com.m4a" crossorigin="anonymous" ></audio>
 					<div id="playiconMenu">
 						<button data-playing="false" class="tape-controls-playMENU" role="switch" aria-checked="false">
-							<img src="ressources/img/flashICONMENU.png" alt="Icon Play" width="24" height="24">
+							<img src="ressources/img/flashICONMENU.png" alt="Icon Play" width="24" height="24">  <!-- icon de l'eclair -->
 						</button>
 					</div>
 				</section>
 			</div>
 		</div>
+		<!-- Fin de la gestion de la musique -->
 	</body>
 </html>
