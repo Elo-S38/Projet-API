@@ -1,9 +1,9 @@
 # **GESTION ET SPECIFICITÉS DU PROJET**
 
-## **NOMBRE DE COLLABORATEURS pour le projet collectif** :
+## 🤝**NOMBRE DE COLLABORATEURS pour le projet collectif** :
      4
 
-## **TEMPS de conception et démonstration**: 
+## ⌛️**TEMPS de conception et démonstration**: 
      2 semaines
 
 ## **THEME de l'API CHOISI et OBJECTIFS:**
