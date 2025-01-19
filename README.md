@@ -37,8 +37,8 @@
 <img width="1327" alt="HeroesHub-CharacterPage" src="https://github.com/user-attachments/assets/262d5612-3d19-4bf2-8814-bbac4932725a" />
 
 ## **MVP : FONCTIONNALITES et OBJECTIFS dans le CADRE du PROJET:**
- 
-##🔎 **ETAPES utilisateur:**
+
+### 🔎**ETAPES utilisateur:**
    
 
 **1. Recherche dans le menu (heroApiMenu.js):**
@@ -55,10 +55,10 @@
 
 
     
-📁 **FONCTIONNALITES des fichiers:**
+### 📁 **FONCTIONNALITES des fichiers:**
 
 
-   💾 **1.heroApiMenu.js**
+### 💾 **1.heroApiMenu.js**
 
 📌 **Objectif principal** : Gérer la recherche de super-héros depuis une barre de recherche située dans un menu ou une partie spécifique de l'application.
 
@@ -78,7 +78,7 @@
    
             Affiche des messages d'erreur si l'entrée est vide ou si aucun héros correspondant n'est trouvé.
 
-   💾 **2.heroApi.js**
+### 💾 **2.heroApi.js**
 
 📌**Objectif principal** : Gérer l'affichage détaillé d'un super-héros sur une page dédiée après la recherche.
 
