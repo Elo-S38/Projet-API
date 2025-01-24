@@ -128,6 +128,8 @@ Les deux fichiers incluent aussi une configuration pour gérer un lecteur audio 
    
      📌Rendre l'interface responsive.
 
+     📌Repondre aux normes d'accessibilité (a11y).
+
     
 
     
